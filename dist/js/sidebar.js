@@ -1,8 +1,13 @@
-const btnToggle = document.querySelector('#btn-toggle');
+const btnOpen = document.querySelector('#btn-open');
+const btnClose = document.querySelector('#btn-close');
 const sidebar = document.querySelector('.sidebar');
 
-btnToggle.addEventListener('click', function() {
-  sidebar.classList.toggle('hidden');
+btnOpen.addEventListener('click', function() {
+  sidebar.classList.remove('hidden');
+});
+
+btnClose.addEventListener('click', function() {
+  sidebar.classList.add('hidden');
 });
 
 sidebar.addEventListener('click', function() {
