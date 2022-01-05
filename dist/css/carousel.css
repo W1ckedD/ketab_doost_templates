@@ -1,0 +1,91 @@
+.carousel {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+}
+
+.carousel-btn:active {
+  outline: none;
+}
+
+.carousel-btn-left {
+  left: -50px;
+}
+
+.carousel-btn-right {
+  right: -50px;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  direction: ltr;
+}
+
+.carousel-nav li {
+  margin: 0 1rem;
+  height: 10px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.carousel-nav li:hover, .carousel-nav li.current {
+  background-color: var(--primary-color);
+}
+
+.carousel-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
