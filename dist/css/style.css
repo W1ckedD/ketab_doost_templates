@@ -35,6 +35,12 @@ option {
   font-family: 'Sadeh', sans-serif;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
 .btn {
   background-color: transparent;
   border: none;
@@ -342,6 +348,35 @@ option {
 .form-group:focus-within .underline::before,
 .form-group:focus-within .underline::after {
   width: 50%;
+}
+
+.table {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 10px #ccc;
+  padding: 1rem;
+  margin: auto;
+}
+
+.table .table-head {
+  background-color: var(--primary-color);
+}
+
+.table th {
+  padding: 0 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.table tr:nth-child(even) {
+  background-color: white;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.table .table-head {
+  background-color: var(--primary-color);
 }
 
 @media (min-width: 600px) {
