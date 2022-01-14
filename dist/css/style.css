@@ -9,6 +9,8 @@
   /* --primary-color: rgba(0, 150, 136, 1); */
   --blue-color: rgba(41, 98, 255, 1);
   --primary-color: rgba(64, 199, 118, 1);
+  --danger-color: rgb(241, 92, 92);
+  --warning-color: rgb(233, 159, 48);
 }
 
 * {
@@ -365,6 +367,7 @@ option {
 .table th {
   padding: 0 0.5rem;
   background-color: var(--primary-color);
+  font-size: 24px;
 }
 
 .table tr:nth-child(even) {
@@ -377,6 +380,29 @@ option {
 
 .table .table-head {
   background-color: var(--primary-color);
+}
+
+.table td {
+  text-align: center;
+  font-size: 22px;
+}
+
+.table td .btn {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.table td .btn i.fa.fa-trash {
+  color: var(--danger-color);
+}
+
+.table td .btn i.fa.fa-info-circle {
+  color: var(--blue-color);
+}
+
+.table td .btn i.fa.fa-ban {
+  color: var(--warning-color);
 }
 
 @media (min-width: 600px) {
